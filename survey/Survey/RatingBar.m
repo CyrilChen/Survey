@@ -41,7 +41,7 @@
         
         //
         CGFloat width = frame.size.width/7.0;
-        CGFloat height = frame.size.height*0.8;
+//        CGFloat height = frame.size.height*0.8;
         self.starWidth = width;
         for(int i = 0;i<5;i++){
             UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width*ZOOM, width*ZOOM)];
@@ -88,10 +88,10 @@
         if(count>5){
             _starNumber = 5;
 
-            NSLog(@"more than tap _starNumber : %d",_starNumber);
+            NSLog(@"more than tap _starNumber : %ld",(long)_starNumber);
         }else{
             _starNumber = count-1;
-            NSLog(@"tap _starNumber : %d",_starNumber);
+            NSLog(@"tap _starNumber : %ld",(long)_starNumber);
         }
         
         [self setMessageLabelDetail:_starNumber];
@@ -108,7 +108,7 @@
             self.topView.frame = CGRectMake(0, 0, self.starWidth*(count+1), self.bounds.size.height);
             _starNumber = count;
         }
-        NSLog(@" pan _starNumber : %d",_starNumber);
+        NSLog(@" pan _starNumber : %ld",(long)_starNumber);
         [self setMessageLabelDetail:_starNumber];
     }
 }
