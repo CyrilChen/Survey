@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GWQuestionnaireCellSelection" id="KGk-i7-Jjw" customClass="GWQuestionnaireCellSelection">
+            <rect key="frame" x="0.0" y="0.0" width="602" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="602" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKc-RE-4cv">
+                        <rect key="frame" x="133" y="3" width="336" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laksdjlkasdjlkasjdlkasd\\" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IP-Mb-qmu">
+                                <rect key="frame" x="20" y="6" width="271" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fPO-n2-f7D">
+                                <rect key="frame" x="301" y="11" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Ogo-gq-Bwf"/>
+                                    <constraint firstAttribute="width" constant="15" id="hOR-pn-AdH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fPO-n2-f7D" firstAttribute="centerY" secondItem="rKc-RE-4cv" secondAttribute="centerY" id="BDF-oT-z0Q"/>
+                            <constraint firstItem="2IP-Mb-qmu" firstAttribute="top" secondItem="rKc-RE-4cv" secondAttribute="top" constant="6" id="EFg-Tc-IIL"/>
+                            <constraint firstAttribute="bottom" secondItem="2IP-Mb-qmu" secondAttribute="bottom" constant="6" id="HWG-2d-wZN"/>
+                            <constraint firstAttribute="trailing" secondItem="fPO-n2-f7D" secondAttribute="trailing" constant="20" id="IxR-9Y-X68"/>
+                            <constraint firstItem="fPO-n2-f7D" firstAttribute="leading" secondItem="2IP-Mb-qmu" secondAttribute="trailing" constant="10" id="sbR-b1-mlQ"/>
+                            <constraint firstItem="2IP-Mb-qmu" firstAttribute="leading" secondItem="rKc-RE-4cv" secondAttribute="leading" constant="20" id="yhr-rM-Bb9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rKc-RE-4cv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="750" constant="30" id="1ez-Bz-AHT"/>
+                    <constraint firstItem="rKc-RE-4cv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="750" constant="30" id="8pS-1P-N55"/>
+                    <constraint firstAttribute="trailing" secondItem="rKc-RE-4cv" secondAttribute="trailing" priority="750" constant="30" id="IDC-ly-KoR"/>
+                    <constraint firstAttribute="bottom" secondItem="rKc-RE-4cv" secondAttribute="bottom" constant="3" id="MY3-92-gAT"/>
+                    <constraint firstItem="rKc-RE-4cv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="133" id="Olb-ey-2FV"/>
+                    <constraint firstAttribute="trailing" secondItem="rKc-RE-4cv" secondAttribute="trailing" constant="133" id="czw-fa-0XZ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rKc-RE-4cv" secondAttribute="trailing" priority="750" constant="30" id="diu-Iq-MSy"/>
+                    <constraint firstItem="rKc-RE-4cv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pHF-OT-qXS"/>
+                    <constraint firstItem="rKc-RE-4cv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="wX7-Od-VwV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1ez-Bz-AHT"/>
+                        <exclude reference="8pS-1P-N55"/>
+                        <exclude reference="IDC-ly-KoR"/>
+                        <exclude reference="diu-Iq-MSy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="container" destination="rKc-RE-4cv" id="Xnc-dK-D0G"/>
+                <outlet property="mutableAnswerMessageLabel" destination="2IP-Mb-qmu" id="I0g-Oh-W30"/>
+                <outlet property="rightImageView" destination="fPO-n2-f7D" id="3B9-rj-UJU"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="349"/>
+        </tableViewCell>
+    </objects>
+</document>

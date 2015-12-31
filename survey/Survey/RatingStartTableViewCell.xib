@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RatingStartTableViewCell" id="KGk-i7-Jjw" customClass="RatingStartTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-jw-vQm">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sb3-jw-vQm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5W6-r8-lfm"/>
+                    <constraint firstItem="sb3-jw-vQm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BxJ-Ct-x9h"/>
+                    <constraint firstAttribute="trailing" secondItem="sb3-jw-vQm" secondAttribute="trailing" id="Gaf-8K-6BQ"/>
+                    <constraint firstItem="sb3-jw-vQm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dh5-Fo-6yL"/>
+                    <constraint firstAttribute="bottom" secondItem="sb3-jw-vQm" secondAttribute="bottom" id="tyg-67-awa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ratingStartView" destination="sb3-jw-vQm" id="uQT-oO-hbv"/>
+            </connections>
+            <point key="canvasLocation" x="500" y="340"/>
+        </tableViewCell>
+    </objects>
+</document>

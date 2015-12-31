@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textViewTableViewCell" id="KGk-i7-Jjw" customClass="textViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vys-29-6Vi">
+                        <rect key="frame" x="125" y="5" width="518" height="38"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfU-UV-MmO">
+                                <rect key="frame" x="12" y="6" width="494" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="UMQ-kH-32S"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LfU-UV-MmO" secondAttribute="trailing" constant="12" id="6TJ-Ix-NwK"/>
+                            <constraint firstAttribute="bottom" secondItem="LfU-UV-MmO" secondAttribute="bottom" constant="6" id="gsm-ep-Dcm"/>
+                            <constraint firstItem="LfU-UV-MmO" firstAttribute="leading" secondItem="Vys-29-6Vi" secondAttribute="leading" constant="12" id="jaf-Y6-ebV"/>
+                            <constraint firstItem="LfU-UV-MmO" firstAttribute="top" secondItem="Vys-29-6Vi" secondAttribute="top" constant="6" id="wJY-3I-Czn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Vys-29-6Vi" secondAttribute="trailing" constant="125" id="1wn-sK-vpl"/>
+                    <constraint firstItem="Vys-29-6Vi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="84v-OJ-33h"/>
+                    <constraint firstAttribute="bottom" secondItem="Vys-29-6Vi" secondAttribute="bottom" id="JHE-Ah-sp5"/>
+                    <constraint firstItem="Vys-29-6Vi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="geN-KA-aUi"/>
+                    <constraint firstItem="Vys-29-6Vi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="125" id="wpM-u9-hZH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="borderView" destination="Vys-29-6Vi" id="oMH-18-foE"/>
+                <outlet property="userFeedBackTextView" destination="LfU-UV-MmO" id="MQh-7c-7yX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
