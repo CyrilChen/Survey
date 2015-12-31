@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GWQuestionnaire.h"
 #import "QuestionnaireItem.h"
 #import "QuestionItem.h"
 #import "FAKFontAwesome.h"
@@ -16,6 +15,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *mutableAnswerMessageLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *rightImageView;
 
--(void)setContent:(QuestionnaireItem*)item row:(int)r;
--(void)setOwner:(GWQuestionnaire*)val;
 @end

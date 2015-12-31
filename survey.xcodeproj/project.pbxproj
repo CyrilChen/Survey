@@ -27,7 +27,6 @@
 		A1D074F31C33E0C9007AF7D8 /* bt_star_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D074DA1C33E0C8007AF7D8 /* bt_star_a@2x.png */; };
 		A1D074F41C33E0C9007AF7D8 /* bt_star_b.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D074DB1C33E0C8007AF7D8 /* bt_star_b.png */; };
 		A1D074F51C33E0C9007AF7D8 /* bt_star_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D074DC1C33E0C8007AF7D8 /* bt_star_b@2x.png */; };
-		A1D074F61C33E0C9007AF7D8 /* GWQuestionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D074DE1C33E0C9007AF7D8 /* GWQuestionnaire.m */; };
 		A1D074F71C33E0C9007AF7D8 /* GWQuestionnaireCellRate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D074E01C33E0C9007AF7D8 /* GWQuestionnaireCellRate.m */; };
 		A1D074F81C33E0C9007AF7D8 /* GWQuestionnaireCellRate.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D074E11C33E0C9007AF7D8 /* GWQuestionnaireCellRate.xib */; };
 		A1D074F91C33E0C9007AF7D8 /* GWQuestionnaireCellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D074E31C33E0C9007AF7D8 /* GWQuestionnaireCellSelection.m */; };
@@ -94,8 +93,6 @@
 		A1D074DA1C33E0C8007AF7D8 /* bt_star_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bt_star_a@2x.png"; path = "Survey/bt_star_a@2x.png"; sourceTree = "<group>"; };
 		A1D074DB1C33E0C8007AF7D8 /* bt_star_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_star_b.png; path = Survey/bt_star_b.png; sourceTree = "<group>"; };
 		A1D074DC1C33E0C8007AF7D8 /* bt_star_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bt_star_b@2x.png"; path = "Survey/bt_star_b@2x.png"; sourceTree = "<group>"; };
-		A1D074DD1C33E0C8007AF7D8 /* GWQuestionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWQuestionnaire.h; path = Survey/GWQuestionnaire.h; sourceTree = "<group>"; };
-		A1D074DE1C33E0C9007AF7D8 /* GWQuestionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWQuestionnaire.m; path = Survey/GWQuestionnaire.m; sourceTree = "<group>"; };
 		A1D074DF1C33E0C9007AF7D8 /* GWQuestionnaireCellRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWQuestionnaireCellRate.h; path = Survey/GWQuestionnaireCellRate.h; sourceTree = "<group>"; };
 		A1D074E01C33E0C9007AF7D8 /* GWQuestionnaireCellRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWQuestionnaireCellRate.m; path = Survey/GWQuestionnaireCellRate.m; sourceTree = "<group>"; };
 		A1D074E11C33E0C9007AF7D8 /* GWQuestionnaireCellRate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GWQuestionnaireCellRate.xib; path = Survey/GWQuestionnaireCellRate.xib; sourceTree = "<group>"; };
@@ -235,8 +232,6 @@
 				A1D074ED1C33E0C9007AF7D8 /* SurveyViewController.h */,
 				A1D074EE1C33E0C9007AF7D8 /* SurveyViewController.m */,
 				A1D075051C33E109007AF7D8 /* QuestionnaireCell */,
-				A1D074DD1C33E0C8007AF7D8 /* GWQuestionnaire.h */,
-				A1D074DE1C33E0C9007AF7D8 /* GWQuestionnaire.m */,
 				A1D075081C33E2B0007AF7D8 /* QuestionItem.h */,
 				A1D075091C33E2B0007AF7D8 /* QuestionItem.m */,
 				A1D075061C33E17E007AF7D8 /* QuestionnaireItem */,
@@ -447,7 +442,6 @@
 				A1D074FD1C33E0C9007AF7D8 /* RatingStartTableViewCell.m in Sources */,
 				A1D074F91C33E0C9007AF7D8 /* GWQuestionnaireCellSelection.m in Sources */,
 				A19F63C61C34B525001DEA25 /* FAKIonIcons.m in Sources */,
-				A1D074F61C33E0C9007AF7D8 /* GWQuestionnaire.m in Sources */,
 				A1D075011C33E0C9007AF7D8 /* textViewTableViewCell.m in Sources */,
 				A1D074FC1C33E0C9007AF7D8 /* RatingBar.m in Sources */,
 				A1D074A31C33DD65007AF7D8 /* main.m in Sources */,

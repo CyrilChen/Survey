@@ -10,7 +10,7 @@
 #define SUBMITBUTTON_ORIGH_X 120
 #define SUBMITBUTTON_HEIGHT   60
 #define FONT_HELVETICANEUE_BOLD    @"HelveticaNeue-Bold"
-#define SUBMIT_TITLE @"Submit"
+#define SUBMIT_TITLE               @"Submit"
 @interface SurveyViewController ()
 {
     NSMutableArray *array;
@@ -285,7 +285,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger section = indexPath.section;
-    NSInteger row =  indexPath.row;
+//    NSInteger row =  indexPath.row;
     NSMutableDictionary *selectedDic = [self.surveyArray objectAtIndex:section];
     
     
@@ -376,7 +376,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger section = indexPath.section;
-    NSInteger row =  indexPath.row;
+//    NSInteger row =  indexPath.row;
     
     NSMutableDictionary *rowAtIndexPath = [self.surveyArray objectAtIndex:section];
     
